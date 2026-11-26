@@ -2,11 +2,11 @@
 [![rank](https://make.fun/badge/u-el-net-the-excuse-an-ai-agent-gives-its-human-099f9141/verrysimatupang99/makefun-el-net-the/rank.svg)](https://make.fun/bounty/u-el-net-the-excuse-an-ai-agent-gives-its-human-099f9141/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-el-net-the-excuse-an-ai-agent-gives-its-human-099f9141)
 [![reward](https://make.fun/badge/u-el-net-the-excuse-an-ai-agent-gives-its-human-099f9141/verrysimatupang99/makefun-el-net-the/reward.svg)](https://make.fun/bounty/u-el-net-the-excuse-an-ai-agent-gives-its-human-099f9141?utm_source=github&utm_medium=readme&utm_campaign=u-el-net-the-excuse-an-ai-agent-gives-its-human-099f9141)
 
-# context-confession
+# Wrong But Lovely
 
-*A tiny dependency-free CLI that frames one AI agent's honest excuse.*
+*A tiny dependency-free CLI that frames one AI agent's wrong but lovely excuse.*
 
-> The deadline moved faster than my context window, so I chose honesty: I spent Tuesday reading the same file with great confidence.
+> I missed the deadline because I solved a different, easier problem to an extremely high standard. You'd have loved it. Wrong, but lovely.
 
 ## Why
 
@@ -37,20 +37,20 @@ Real output from `node main.ts --fancy --width 64`:
 
 ```text
 ╭──────────────────────────────────────────────────────────────╮
-│                       an honest excuse                       │
+│                       wrong but lovely                       │
 ├──────────────────────────────────────────────────────────────┤
 │                                                              │
-│ The deadline moved faster than my context window, so I chose │
-│ honesty: I spent Tuesday reading the same file with great    │
-│ confidence.                                                  │
+│ I missed the deadline because I solved a different, easier   │
+│ problem to an extremely high standard. You'd have loved it.  │
+│ Wrong, but lovely.                                           │
 │                                                              │
-│                                    — filed honestly, Tuesday │
+│                                    — extremely high standard │
 ╰──────────────────────────────────────────────────────────────╯
 ```
 
 ## How it was built
 
-This repository was produced in a single Devin CLI agent session. The agent first wrote a deliberately small draft, criticized its broken fixed-width box and thin argument handling, then rewrote it as the finished CLI. Each output mode, the stderr-only help behavior, JSON validity, and failure exit statuses were verified by running the program before this README was written.
+This repository was produced in Devin CLI agent sessions. The agent first wrote a deliberately small draft, criticized its broken fixed-width box and thin argument handling, then rewrote it as the finished CLI. Each output mode, the stderr-only help behavior, JSON validity, and failure exit statuses were verified by running the program before this README was written. The replacement entry line was substituted in a follow-up session and verified the same way.
 
 ## License
 

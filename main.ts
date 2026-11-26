@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 /**
- * context-confession
+ * wrong-but-lovely
  *
- * A dependency-free command-line presentation of one unusually honest excuse.
+ * A dependency-free command-line presentation of one delightfully wrong excuse.
  * The entry line is the product; everything else exists to frame it well.
  */
 
@@ -17,8 +17,8 @@ interface CliOptions {
 }
 
 const ENTRY_LINE =
-  'The deadline moved faster than my context window, so I chose honesty: I spent Tuesday reading the same file with great confidence.';
-const PROGRAM_NAME = 'context-confession';
+  'I missed the deadline because I solved a different, easier problem to an extremely high standard. You\'d have loved it. Wrong, but lovely.';
+const PROGRAM_NAME = 'wrong-but-lovely';
 const VERSION = '1.0.0';
 const DEFAULT_WIDTH = 76;
 const MIN_WIDTH = 32;
@@ -111,7 +111,7 @@ function parseArgs(argv: string[]): CliOptions {
 function usageText(): string {
   return `Usage: node main.ts [options]
 
-Present the make.fun entry line with unusual sincerity.
+Present the make.fun entry line with misplaced confidence.
 
 Output modes:
   --plain              wrapped plain text (default)
@@ -195,8 +195,8 @@ function renderFancy(width: number): string {
   const contentWidth = innerWidth - 2;
   const rule = repeat('─', innerWidth);
   const empty = `│${repeat(' ', innerWidth)}│`;
-  const title = centerText('an honest excuse', innerWidth);
-  const note = '— filed honestly, Tuesday'.padStart(contentWidth);
+  const title = centerText('wrong but lovely', innerWidth);
+  const note = '— extremely high standard'.padStart(contentWidth);
 
   const entryRows = wrapText(ENTRY_LINE, contentWidth).map((line) => {
     return `│ ${line.padEnd(contentWidth)} │`;
